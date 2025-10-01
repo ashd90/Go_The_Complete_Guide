@@ -2,10 +2,25 @@ package main
 
 import (
 	"fmt"
+	"os"
+	// "strconv"
 )
 
-func main() {
+const accountBalanceFile = "balance.txt"
 
+// func getBalanceFromFile() float64 {
+// 	data, _ := os.ReadFile(accountBalanceFile)
+// 	balanceText = string(data)
+// 	balance, _ = strconv.ParseFloat(balanceText, 64)
+// 	return balance
+
+// }
+func writeBalanceToFile(balance float64) {
+	balanceText := fmt.Sprint(balance)
+	os.WriteFile(accountBalanceFile, []byte(balanceText), 0644)
+}
+func main() {
+	// var accountBalance = getBalanceFromFile()
 	var accountBalance = 1000.0
 	fmt.Println("Welcome to Bharat Bank")
 	for i := 0; i < 3; i++ {
@@ -33,6 +48,9 @@ func main() {
 				// return
 				continue
 			}
+			var accountBalance = accountBalance + depositAmount
+			fmt.Println("Your updated Balance is: ", accountBalance)
+			writeBalanceToFile(accountBalance)
 		case 3:
 			fmt.Print("Enter Amount to Withdraw: ")
 			var withdrawAmount float64
@@ -49,9 +67,10 @@ func main() {
 
 			var accountBalance = accountBalance - withdrawAmount
 			fmt.Println("Your Account Balance is: ", accountBalance)
+			writeBalanceToFile(accountBalance)
 		default:
 			fmt.Println("Your Transaction is cancelled! Remove Card")
-
+			return
 		}
 
 		// if choice == 1 {
