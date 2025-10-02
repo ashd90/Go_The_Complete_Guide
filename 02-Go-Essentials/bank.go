@@ -106,6 +106,4 @@ func main() {
 		// }
 	}
 
-	fmt.Println("Thank you for choosing our services")
-
 }
