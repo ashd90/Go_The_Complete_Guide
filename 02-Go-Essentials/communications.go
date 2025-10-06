@@ -1,4 +1,6 @@
+package main
 
+import "fmt"
 
 func presentOptions() {
 	fmt.Println("1. Check the Balance")
