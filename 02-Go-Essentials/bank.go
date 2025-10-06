@@ -25,10 +25,7 @@ func main() {
 	fmt.Println("Welcome to Bharat Bank")
 	for i := 0; i < 3; i++ {
 
-		fmt.Println("1. Check the Balance")
-		fmt.Println("2. Deposit Cash")
-		fmt.Println("3. Withdraw Cash")
-		fmt.Println("4. Cancel Transaction")
+		presentOptions()
 		var choice int
 		fmt.Print("Please Choose any one option: ")
 		fmt.Scan(&choice)
