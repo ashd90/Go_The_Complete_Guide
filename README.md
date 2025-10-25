@@ -43,32 +43,8 @@ go build filename.go
 ./filename
 ```
 
----
 
-## 📑 Topics Covered
 
-- **Go Basics**  
-  Variables, types, functions, control flow, error handling, packages.
-
-- **Concurrency**  
-  Goroutines, channels, mutexes, sync primitives.
-
-- **Data Structures**  
-  Arrays, slices, maps, structs, interfaces.
-
-- **OOP in Go**  
-  Methods, interfaces, embedding, composition.
-
-- **Testing**  
-  Writing unit tests, using Go's testing package.
-
-- **Web Development**  
-  Building web servers, REST APIs with `net/http`.
-
-- **Tools & Best Practices**  
-  Formatting (`gofmt`), linting, dependency management (`go mod`).
-
----
 
 ## 🧩 Example
 
@@ -90,14 +66,6 @@ func main() {
 
 Feel free to contribute by submitting issues or pull requests for improvements, new topics, or corrections!
 
----
-
-## 📞 Support & Discussion
-
-- For questions, open an [Issue](https://github.com/ashd90/Go_The_Complete_Guide/issues)
-- For discussions, join the GitHub Discussions tab
-
----
 
 ## 📔 References
 
