@@ -1,6 +1,6 @@
-# Go: The Complete Guide ![Go Logo](https://img.shields.io/badge/Language-Go-00ADD8?logo=go)
+# Go ![Go Logo](https://img.shields.io/badge/Language-Go-00ADD8?logo=go)
 
-Welcome to **Go: The Complete Guide**!  
+Welcome to **GO-PATH**!  
 This repository is dedicated to helping you learn the Go programming language from fundamentals to advanced topics.
 
 ---
